@@ -121,7 +121,7 @@ class ChatClient {
                     if (commands[args[0]]) {
                         commands[args[0]].callback(args.slice(1));
                     } else {
-                        this.addSystemLine('Unrecognized Command: ' + text + ', type -help for more info.');
+                        this.addSystemLine('Commande inconnus: ' + text + ', faite -help pour plus d\'informations.');
                     }
 
                 // Allows for regular messages to be sent to the server.
